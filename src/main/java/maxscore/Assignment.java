@@ -18,7 +18,7 @@ import org.junit.Test;
  * Space Complexity - O(k^2)
  * where k is the fixed size here it is 3000 characters
  */
-public class Solution {
+public class Assignment {
     /**
      * Reads the given file from the path 3000 characters and finds the longest subsequence
      *
@@ -112,12 +112,5 @@ public class Solution {
                     lookup[i][j] = Math.max(lookup[i][j - 1], lookup[i - 1][j]);
             }
         }
-    }
-    
-    @Test
-    public void testMaxScore(){
-        Assert.assertEquals("ABD",findMaxScore("F:/1-PHASE2/voicezen/src/main/resources/data1.txt"));
-        Assert.assertEquals("iqzqcwltcjwbkegmkfymcgbtomweswmdontqlejnphqbmxnyelmhtnchcynuxbxloqezwpmlxolcbjgoxnkkqtmqhhnkgzavupjtuxgwermsbzivlaesqqbrpwvsheoeuzfmdwavazxidygpgnehkklmsenepauwnylbpmaaqmmdcipamtmncdfuhcudhkhlqrcsflajcooireabjlfqpbrqwjggkqwiszptgmuzcrcqqpqnbzqpljbxhvqsjybeerqfllauzquzfevpyzugrrokhetzktqmntunehbttceedeqobzcldlbeeroococbaoeovcbvanxubdimnqmnwixaclvgalgecqlppxnhploncrecnnbniqhsdgannnegrdbbdsfwhtdkrqbddewxfxqguzsxuxnbvbykujsqbqgbniushjdnkfkbmnnhsfmgkmqesftjgrjrnedygdmofyuxqllgmzxruzghorktokmhhyzgxpmztjnahijvatpezpjlcclzpilcnzfpspghlipsujauskbehwntqexwgsctxumxfofuktfhtcxwdwtoptmoofnzzcutxibncvrkeeuujbgbzhjkjsjxmxyhthtmdyhcudlatudnsnqnsmgqcxbxgyqatktpxburrqtrumxrkxjjseqqsbqwbllcxrxuwyyotnjirabsqfhgthikfjaqyzjaqutktnnzpttwttifivvrgajgemxmapwppjvrvvdmbmpttbpbmxrqsmaaamdxdooabhqlloobvhxrbbvbledhltbrkqqwqwkqpsslxjoccnklsacbsxeussccrpvpsnoucyfekikfyicrbybaqguwpuexlyqvqnhtbmtmjfccvbjsdqjnhjmwnavgyucgnunggnenkgntfuadkoajxfklahsxfummtowsqutebiniagqnaiveexjgbhbohbllrhqniwjnebbjqebjdvjnodtjhubdttnmjhrsb"
-                ,findMaxScore("F:/1-PHASE2/voicezen/src/main/resources/data2.txt"));
     }
 }
